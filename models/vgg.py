@@ -2,7 +2,7 @@ import torch.nn as nn
 from .blocks import Conv2dBlock
 
 class VGG16(nn.Module):
-    def __init__(self):
+    def __init__(self, attention = None):
         super().__init__()
 
         self.features = nn.Sequential(

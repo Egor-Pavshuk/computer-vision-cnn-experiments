@@ -9,3 +9,5 @@ NUM_CLASSES = 10
 IMAGE_SIZE = 224
 
 MODEL_NAME = "resnet_cbam"
+
+DATASET_PATH = ".data"
