@@ -1,0 +1,2 @@
+Model,Accuracy,Loss,Epochs,Batch Size,Learning Rate,Training Time,Optimizer
+resnet,0.7101,0.8389,30,128,0.001,402.07,Adam

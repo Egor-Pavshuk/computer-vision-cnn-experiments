@@ -1,0 +1,2 @@
+Model,Accuracy,Loss,Epochs,Batch Size,Learning Rate,Training Time,Optimizer
+vgg,0.7376,0.8268,30,128,0.001,891.23,Adam

@@ -1,0 +1,2 @@
+Model,Accuracy,Loss,Epochs,Batch Size,Learning Rate,Training Time,Optimizer
+googlenet,0.7469,0.7585,30,128,0.001,434.31,Adam

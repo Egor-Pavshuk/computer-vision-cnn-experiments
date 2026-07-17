@@ -1,0 +1,11 @@
+BATCH_SIZE = 128
+
+LEARNING_RATE = 1e-3
+
+EPOCHS = 30
+
+NUM_CLASSES = 10
+
+IMAGE_SIZE = 224
+
+MODEL_NAME = "resnet_cbam"
