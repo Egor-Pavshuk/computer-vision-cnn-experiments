@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 from pathlib import Path
-from configs.config import *
+from configs import *
 
-PLOTS_DIR = Path("results") / "plots"
+PLOTS_DIR = Path(RESULTS_PATH) / "plots"
 PLOTS_DIR.mkdir(parents=True, exist_ok=True)
 
 def plot_metric(train_values, val_values, ylabel, filename):

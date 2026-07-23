@@ -1,8 +1,9 @@
 from pathlib import Path
 import csv
+from configs import RESULTS_PATH
 
 
-RESULTS_DIR = Path("results") / "csv"
+RESULTS_DIR = Path(RESULTS_PATH) / "csv"
 RESULTS_DIR.mkdir(exist_ok=True)
 
 

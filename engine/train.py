@@ -1,11 +1,11 @@
 import torch
 from tqdm import tqdm
 from pathlib import Path
-from configs.config import MODEL_NAME
+from configs import MODEL_NAME, CHECKPOINT_PATH, MODEL_STATE_NAME
 
 
 def train_model(model, train_loader, val_loader, criterion, optimizer, device=torch.device("cpu"), num_epochs=10):
-    save_dir = Path("results/models")
+    save_dir = Path(CHECKPOINT_PATH)
     save_dir.mkdir(parents=True, exist_ok=True)
     train_losses = []
     val_losses = []
@@ -34,7 +34,7 @@ def train_model(model, train_loader, val_loader, criterion, optimizer, device=to
             checkpoint = {
                 "epoch": epoch + 1,
                 "val_loss": val_loss,
-                "model_state_dict": model.state_dict(),
+                MODEL_STATE_NAME: model.state_dict(),
                 "optimizer_state_dict": optimizer.state_dict(),
             }
             # Save the best model

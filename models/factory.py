@@ -2,23 +2,27 @@ from .resnet import ResNet
 from .googlenet import GoogLeNet
 from .vgg import VGG16
 
-
-def create_model(name: str):
-    name = name.lower()
-
-    if name == "resnet_se":
-        return ResNet(attention="se")
+class ModelFactory():
+    def __init__(self, name: str):
+        name = name.lower()
+        
+        if name == "resnet_se":
+            self.model = ResNet(attention="se")
+        
+        elif name == "resnet_cbam":
+            self.model = ResNet(attention="cbam")
+        
+        elif name == "resnet":
+            self.model = ResNet()
     
-    if name == "resnet_cbam":
-        return ResNet(attention="cbam")
+        elif name == "googlenet":
+            self.model = GoogLeNet()
     
-    if name == "resnet":
-        return ResNet()
+        elif name == "vgg":
+            self.model = VGG16()
 
-    if name == "googlenet":
-        return GoogLeNet()
+        else:
+            raise ValueError(f"Unknown model: {name}")
 
-    if name == "vgg":
-        return VGG16()
-
-    raise ValueError(f"Unknown model: {name}")
+    def get_model(self):
+        return self.model
