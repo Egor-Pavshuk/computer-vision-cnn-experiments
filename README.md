@@ -169,9 +169,13 @@ results/csv/
 
 ### Accuracy
 
+GoogLeNet Accuracy:
+
 ![Accuracy](results/plots/googlenet_accuracy.png)
 
 ### Loss
+
+GoogLeNet Loss:
 
 ![Loss](results/plots/googlenet_loss.png)
 
