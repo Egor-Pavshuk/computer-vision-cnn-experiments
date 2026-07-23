@@ -163,7 +163,7 @@ results/csv/
 | GoogLeNet | — | 0.76 | 74.7% |
 | ResNet | — | 0.84 | 71% |
 | ResNet | SE | 0.83 | 72.8% |
-| ResNet | CBAM | 0.85 | 70.8% |
+| ResNet | CBAM | 0.84 | 73.1% |
 
 ## Training Curves
 

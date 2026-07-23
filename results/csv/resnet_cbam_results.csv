@@ -1,2 +1,2 @@
 Model,Accuracy,Loss,Epochs,Batch Size,Learning Rate,Training Time,Optimizer
-resnet_cbam,0.7082,0.8531,30,128,0.001,436.2,Adam
+resnet_cbam,0.7311,0.8352,30,128,0.001,433.41,Adam
